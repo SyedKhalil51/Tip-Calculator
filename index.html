@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+        <div class="container">
+                <header>
+                  <h1 id="title" class="text-center">Tip Calculator</h1>
+                </header>
+
+
+                <div>
+    <label>Enter Bill Amount </label> 
+    <input type="number" name="" id="billamount" class="form-control" placeholder="Total Bill"> <br><br>
+
+    <label> Select Service Quality  </label>
+    <select id="serviceQuality" class="form-control">
+       
+        <option value=""> Select Any Value </option>
+        <option value="0.05">  Outstanding</option>
+        <option value="0.04">  Good</option>
+        <option value="0.03"> It was OK</option>
+        <option value="0.02">  Bad</option>
+        <option value="0.01"> Terrible</option>
+
+    </select> <br><br>
+
+    <label>Enter No oF People</label>
+    <input type="number" name="" id="noOfPeople" class="form-control" placeholder="Number of payers"> <br><br>
+
+    <button type="submit" class="btn-success" onclick="tipCalculator()"> Calculate Tip </button> <br>
+
+
+    <div class="results">
+    <h3 id="total">Total: </h3> <br>
+    <h3 id="tipamount"> Tip Amount: </h3> <br>
+    <h3 id="dividetip"> Divided Tip: </h3>
+    </div>
+
+
+              </div>
+        </div>
+
+    
+    <script src="app.js""> </script>
+</body>
+</html>
